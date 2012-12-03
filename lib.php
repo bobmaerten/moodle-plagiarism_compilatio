@@ -530,7 +530,6 @@ class plagiarism_plugin_compilatio extends plagiarism_plugin {
                 LEFT JOIN {plagiarism_compilatio_config} cc1 ON cc1.cm = cf.cm
                 LEFT JOIN {plagiarism_compilatio_config} cc2 ON cc2.cm = cf.cm
                 LEFT JOIN {plagiarism_compilatio_config} cc3 ON cc3.cm = cf.cm
-                LEFT JOIN {plagiarism_compilatio_config} cc3 ON cc3.cm = cf.cm
                 WHERE cf.statuscode = '".COMPILATIO_STATUSCODE_ACCEPTED."'
                 AND cc1.name = 'use_compilatio' AND cc1.value='1'
                 AND cc2.name = 'compilatio_analysistype' AND cc2.value = '".COMPILATIO_ANALYSISTYPE_PROG."'
